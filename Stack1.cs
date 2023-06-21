@@ -47,5 +47,18 @@ namespace Stack
                 top = top.Next;
             }
         }
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Node temp = top;
+                Console.WriteLine(temp.Data + "is top Element");
+            }
+        }
+
     }
 }
